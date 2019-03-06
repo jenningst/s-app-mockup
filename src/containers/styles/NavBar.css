@@ -1,0 +1,34 @@
+.navbar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.nav-item > a {
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: .85em;
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a[class="active"] {
+  color: blue;
+}
+
+a[class="active"] > svg {
+  fill: blue;
+}
+
+.nav-item__content {
+  margin-left: 1em;
+}
+
+.nav-item + .nav-item {
+  margin-left: 3rem;
+}
+

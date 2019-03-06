@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import ImageSlide from '../components/ImageSlide';
-import ArrowSlider from '../components/ArrowSlider';
+import ImageSlide from '../ImageSlide';
+import ArrowSlider from '../ArrowSlider';
+import './styles/Carousel.css';
 
 const Carousel = ({ imgUrls }) => {
   const [imageIndex, setImageIndex] = useState(0);
@@ -30,11 +31,13 @@ const Carousel = ({ imgUrls }) => {
       />
       <div className="arrow-sliders">
         <ArrowSlider 
+          className="slider"
           direction="left"
           clickFunction={ previousSlide }
           glyph="&#9664;"
         />
         <ArrowSlider 
+          className="slider"
           direction="right"
           clickFunction={ nextSlide }
           glyph="&#9654;"

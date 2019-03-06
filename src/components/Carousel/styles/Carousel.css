@@ -1,0 +1,20 @@
+.carousel {
+  background: yellowgreen;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-basis: 1;
+  flex-grow: 2;
+}
+
+.arrow-sliders {
+  display: flex;
+  flex-flow: row nowrap;
+  text-align: center;
+}
+
+.slider {
+  height: 1em;
+  width: 1em;
+}
