@@ -3,7 +3,7 @@ import React from 'react';
 const Courses = () => {
   return (
     <div>
-      <h1>Courses!</h1>
+      <h1>Fullstack Web Development</h1>
     </div>
   );
 };

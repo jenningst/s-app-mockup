@@ -4,6 +4,7 @@ import Courses from './Courses';
 import HeaderBar from './HeaderBar';
 import Help from './Help';
 import Home from './Home';
+import IndividualCourse from './IndividualCourse';
 
 const App = () => {
   return (
@@ -12,7 +13,7 @@ const App = () => {
         <HeaderBar />
         <Route exact path="/" component={Home}/>
         <Route path="/home" component={Home}/>
-        <Route path="/courses" component={Courses}/>
+        <Route path="/courses" component={IndividualCourse}/>
         <Route path="/help" component={Help}/>
       </div>
     </Router>

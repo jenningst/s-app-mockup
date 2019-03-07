@@ -6,4 +6,22 @@
   padding: 0 2rem 0 2rem;
   height: 5rem;
   border-bottom: 1px solid #efefef;
+  /* background: lightcyan; */
+}
+
+.icon-group {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+
+  flex-grow: 2;
+  /* background: lightgreen; */
+}
+
+.button-group {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  /* background: lightsalmon; */
 }

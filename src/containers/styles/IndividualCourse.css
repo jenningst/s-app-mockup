@@ -1,0 +1,65 @@
+.course-page {
+  /* set base margins/padding */
+  margin: 2em;
+}
+
+div[class="course-page"] > header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+
+  /* TODO: Remove */
+  background: lightyellow;
+}
+
+/* ********** MAIN ********** */
+
+.course-content {
+  display: grid;
+  grid-template-columns: 1fr 30%;
+  grid-template-areas: 
+    "main aside";
+
+  /* TODO: Remove */
+  background: lightblue;
+}
+
+.main {
+  grid-area: "main";
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+
+/* ********** ASIDE ********** */
+.overview-sidebar {
+  grid-area: "aside";
+}
+
+/* ********** CONTENT ********** */
+.overview-sidebar > div, .main > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-content {
+  /* TODO: Remove */
+  height: 15rem;
+  background: lightpink;
+}
+
+.sub-content {
+  /* TODO: Remove */
+  height: 6rem;
+  background: lightcyan;
+}
+
+/* ********** MOBILE ********** */
+@media only screen and (max-width: 1024px) {
+  .course-content {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+}

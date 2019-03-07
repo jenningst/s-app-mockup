@@ -8,14 +8,12 @@ function Avatar({ imgUrl, userName, expandProfile }) {
   return (
     <div className="avatar" onClick={expandProfile}>
       <img className="avatar__img" src={headshot} alt="User profile."/>
-      <p className="avatar__name">{userName}</p>
     </div>
   );
 };
 
 Avatar.propTypes = {
   imgUrl: PropTypes.string,
-  userName: PropTypes.string.isRequired,
   expandProfile: PropTypes.func.isRequired,
 };
 

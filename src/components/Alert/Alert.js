@@ -8,8 +8,8 @@ function Alert ({ newMessages, openMessages }) {
   return (
     <div className="messages" onClick={openMessages}>
       {newMessages 
-        ? <Icon icon={ICONS.BELLMESSAGE}/>
-        : <Icon icon={ICONS.BELL}/>
+        ? <Icon icon={ICONS.BELLMESSAGE} />
+        : <Icon icon={ICONS.BELL} />
       }
     </div>
   );

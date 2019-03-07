@@ -1,12 +1,13 @@
 .navbar {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+  min-width: 200px;
 }
 
 .nav-item > a {
-  display: flex;
-  flex-flow: row nowrap;
   font-size: .85em;
   text-decoration: none;
 }
@@ -24,11 +25,4 @@ a[class="active"] > svg {
   fill: blue;
 }
 
-.nav-item__content {
-  margin-left: 1em;
-}
-
-.nav-item + .nav-item {
-  margin-left: 3rem;
-}
 

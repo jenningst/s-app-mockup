@@ -20,47 +20,33 @@ const HeaderBar = () => {
 
   return (
     <header className="app-header">
-      <div className="app-header__logo">
-        <b>Course Academy</b>
-      </div>
-      <SearchBar />
+      <div className="icon-group">
+        <div className="app-header__logo">
+          <b>Course Academy</b>
+        </div>
       <NavBar>
         <div className="nav-item">
           <NavLink to="/home">
-            <Icon 
-              icon={ICONS.HOME}
-              height="1"
-              width="1"
-              iconClass="nav-item__icon"
-            />
             <div className="nav-item__content">Home</div>
           </NavLink>
         </div>
         <div className="nav-item">
           <NavLink to="/courses">
-            <Icon 
-              icon={ICONS.HOME}
-              height="1"
-              width="1"
-              iconClass="nav-item__icon"
-            />
             <div className="nav-item__content">Courses</div>
           </NavLink>
         </div>
         <div className="nav-item">
           <NavLink to="/help">
-            <Icon 
-              icon={ICONS.HOME}
-              height="1"
-              width="1"
-              iconClass="nav-item__icon"
-            />
             <div className="nav-item__content">Help</div>
           </NavLink>
         </div>
       </NavBar>
-      <Alert newMessages={false} openMessages={openMessages} />
-      <Avatar imgUrl={"test"} userName={"Troy Jennings"} expandProfile={expandProfile}/>
+      </div>
+      <div className="button-group">
+        <SearchBar />
+        <Alert newMessages={false} openMessages={openMessages} />
+        <Avatar imgUrl={"test"} expandProfile={expandProfile}/>
+      </div>
     </header>
   );
 };

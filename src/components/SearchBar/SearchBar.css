@@ -1,0 +1,15 @@
+div[class~="active"] > input {
+  width: 200px;
+  border: none;
+  margin-right: .5em;
+}
+
+div[class~="inactive"] > input {
+  width: 0;
+  border: none;
+}
+
+input {
+  font-size: .9em;
+  padding: .25em;
+}
